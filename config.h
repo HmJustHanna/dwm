@@ -28,8 +28,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "firefox",	NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "zathura",	NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "Filezilla",	NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Filezilla",	NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "zathura",	NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
@@ -64,7 +64,8 @@ static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5
 static const char *volm[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
 static const char *bru[]  = { "xbacklight", "+1", NULL };
 static const char *brd[]  = { "xbacklight", "-1", NULL };
-static const char *scrot[]  = { "scrot", "/home/anna/Pics/scrot/'%d-%m-%Y-$wx$h.png'", "-e", "optipng $f",  NULL };
+static const char *scrot[]  = { "scrot", "/home/anna/Pics/scrot/'%d-%m-%Y-$wx$h.png'", NULL };
+static const char *mocp[]  = { "rxvt-unicode", "-e", "mocp", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -103,10 +104,11 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ 0,          XF86XK_AudioRaiseVolume,	spawn,      {.v = volu } },
 	{ 0,          XF86XK_AudioLowerVolume,	spawn,      {.v = vold } },
-	{ 0,          XF86XK_AudioMute,		spawn,      {.v = volm } },
+	{ 0,          XF86XK_AudioMute,         spawn,      {.v = volm } },
 	{ 0,          XF86XK_MonBrightnessUp,	spawn,      {.v = bru } },
 	{ 0,          XF86XK_MonBrightnessDown,	spawn,      {.v = brd } },
-	{ 0,          XK_Print,			spawn,      {.v = scrot } },
+	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
+	{ 0,          XK_M,                     spawn,      {.v = mocp } },
 };
 
 /* button definitions */
