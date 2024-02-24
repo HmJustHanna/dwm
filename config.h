@@ -9,13 +9,13 @@ static const char *fonts[]          = { "Hack Nerd Font:size=12" };
 static const char dmenufont[]       = "Hack Nerd Font:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
+static const char col_gray3[]       = "#929292";
+static const char col_gray4[]       = "#bbbbbb";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray3, col_cyan,  col_cyan  },
 };
 
 /* tagging */
@@ -27,14 +27,15 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Firefox",	NULL,       NULL,       2 << 8,       0,           -1 },
-	{ "Filezilla",	NULL,       NULL,       3 << 8,       0,           -1 },
+	{ "firefox",	NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "zathura",	NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Filezilla",	NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
@@ -58,11 +59,11 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
-static const char *volu[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+10%", NULL };
-static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-10%", NULL };
+static const char *volu[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
+static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *volm[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
-static const char *bru[]  = { "xbacklight", "+3", NULL };
-static const char *brd[]  = { "xbacklight", "-3", NULL };
+static const char *bru[]  = { "xbacklight", "+1", NULL };
+static const char *brd[]  = { "xbacklight", "-1", NULL };
 static const char *scrot[]  = { "scrot", "/home/anna/Pics/scrot/'%d-%m-%Y-$wx$h.png'", "-e", "optipng $f",  NULL };
 
 static const Key keys[] = {
