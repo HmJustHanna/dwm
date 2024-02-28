@@ -9,17 +9,17 @@ static const char *fonts[]          = { "Hack Nerd Font:size=12" };
 static const char dmenufont[]       = "Hack Nerd Font:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#929292";
-static const char col_gray4[]       = "#bbbbbb";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray3, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -29,7 +29,6 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "firefox",	NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "Filezilla",	NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "zathura",	NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
@@ -62,10 +61,8 @@ static const char *termcmd[]  = { "urxvt", NULL };
 static const char *volu[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *volm[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
-static const char *bru[]  = { "xbacklight", "+1", NULL };
-static const char *brd[]  = { "xbacklight", "-1", NULL };
-static const char *scrot[]  = { "scrot", "/home/anna/Pics/scrot/'%d-%m-%Y-$wx$h.png'", NULL };
-static const char *mocp[]  = { "rxvt-unicode", "-e", "mocp", NULL };
+static const char *bru[]  = { "brightnessctl", "set", "10%+", NULL };
+static const char *brd[]  = { "brightnessctl", "set", "10%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -107,8 +104,8 @@ static const Key keys[] = {
 	{ 0,          XF86XK_AudioMute,         spawn,      {.v = volm } },
 	{ 0,          XF86XK_MonBrightnessUp,	spawn,      {.v = bru } },
 	{ 0,          XF86XK_MonBrightnessDown,	spawn,      {.v = brd } },
-	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
-	{ 0,          XK_M,                     spawn,      {.v = mocp } },
+	{ 0,          XK_Print,                 spawn,      SHCMD("/home/anna/Scripts/scrot.sh")},
+	{ ShiftMask,  XK_Print,                 spawn,      SHCMD("/home/anna/Scripts/scrotsel.sh")},
 };
 
 /* button definitions */
