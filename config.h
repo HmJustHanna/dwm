@@ -57,12 +57,12 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "urxvt", NULL };
 static const char *volu[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *volm[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
-static const char *bru[]  = { "brightnessctl", "set", "10%+", NULL };
-static const char *brd[]  = { "brightnessctl", "set", "10%-", NULL };
+static const char *bru[]  = { "brightnessctl", "set", "1%+", NULL };
+static const char *brd[]  = { "brightnessctl", "set", "1%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
