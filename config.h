@@ -63,6 +63,8 @@ static const char *vold[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5
 static const char *volm[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
 static const char *bru[]  = { "brightnessctl", "set", "1%+", NULL };
 static const char *brd[]  = { "brightnessctl", "set", "1%-", NULL };
+static const char *scrot[]  = { "scrot", "$HOME/Media/Pictures/scrot/%d%m%Y-%H%M%S-$w$h.png", NULL };
+static const char *scrotsel[]  = { "scrot", "$HOME/Media/Pictures/scrot/1.png", "--select", "--line", "mode=edge", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -104,8 +106,8 @@ static const Key keys[] = {
 	{ 0,          XF86XK_AudioMute,         spawn,      {.v = volm } },
 	{ 0,          XF86XK_MonBrightnessUp,	spawn,      {.v = bru } },
 	{ 0,          XF86XK_MonBrightnessDown,	spawn,      {.v = brd } },
-	{ 0,          XK_Print,                 spawn,      SHCMD("/home/anna/Scripts/scrot.sh")},
-	{ ShiftMask,  XK_Print,                 spawn,      SHCMD("/home/anna/Scripts/scrotsel.sh")},
+	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
+	{ ShiftMask,  XK_Print,                 spawn,      {.v = scrotsel } },
 };
 
 /* button definitions */
