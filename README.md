@@ -1,21 +1,34 @@
 # About
 
-I like dwm and arch colors, so beauty changes are insignificant :)
+I like default dwm and arch colors, so beauty changes are insignificant :)
 
 # Screenshots
 
-![feh](/assets/images/tux.png)
 
-![lf](/assets/images/lf.png)
+![](/assets/images/neofetch.png)
 
-![yt-dlp](/assets/images/yt-dlp.png)
+![](/assets/images/ytfzf.png)
 
-![git-client](/assets/images/gh.png)
 
-# Packages from photos
+# Main packages
 
-`sudo pacman -S fzf jq ueberzug yt-dlp mpv`
+[lf](https://github.com/gokcehan/lf) - terminal file manager
 
-`sudo pacman -S xorg-xsetroot rxvt-unicode lf git-client `
+[ytfzf](https://github.com/pystardust/ytfzf) - search and play videos
 
-Read this also http://dwm.suckless.org/
+[mpv](https://github.com/mpv-player/mpv) - media player
+
+`rxvt-unicode` - a VT102 terminal emulator for the X window system
+
+`git-client` - a terminal GitHub CLI (gh)
+
+`neofetch` - customizable system info script
+
+# Other
+
+- I use `xorg-xsetroot` in $HOME/.xinitrc for status info, you can find it in dotfiles repo
+
+- See also my dwm simple setup
+
+- Read more about suckless utils http://suckless.org
+
