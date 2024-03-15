@@ -14,17 +14,17 @@ See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patc
 
 # Main packages 
 
-[rxvt-unicode](https://wiki.archlinux.org/title/Rxvt-unicode)- a VT102 terminal emulator for the X window system
+[rxvt-unicode](https://wiki.archlinux.org/title/Rxvt-unicode)- VT102 terminal emulator
 
-[vim](https://github.com/vim/vim) - a programmer's text editor
+[vim](https://github.com/vim/vim) - text editor
 
-[lf](https://github.com/gokcehan/lf) - terminal file manager
+[lf](https://github.com/gokcehan/lf) - file manager
 
-[ytfzf](https://github.com/pystardust/ytfzf) - search and play videos
+[ytfzf](https://github.com/pystardust/ytfzf) - search and play videos from terminal
 
 [mpv](https://github.com/mpv-player/mpv) - media player
 
-[git-client](https://github.com/cli/cli) - a terminal GitHub CLI (gh)
+[git-client](https://github.com/cli/cli) - GitHub CLI (gh)
 
 [neofetch](https://github.com/dylanaraps/neofetch) - customizable system info script
 
