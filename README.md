@@ -26,9 +26,9 @@ I like default dwm and arch colors, so beauty changes are insignificant :)
 
 # Other
 
-- I use `xorg-xsetroot` in $HOME/.xinitrc for status info, you can find it in dotfiles repo
+- I use `xorg-xsetroot` in [$HOME/.xinitrc](https://github.com/HmJustHanna/dotfiles) to display info in status bar 
 
-- See also my dwm simple setup
+- See also my dmenu simple config
 
 - Read more about suckless utils http://suckless.org
 
