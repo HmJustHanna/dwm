@@ -1,7 +1,7 @@
 # About
 
 After several months of using [i3](https://i3wm.org/), I finally switched to [dwm](https://dwm.suckless.org/). i3 was a good start, but I want even more minimalism! Moreover, dwm is written in c and I was already familiar with the syntax.
-I really like default dwm color palette, so beauty changes are insignificant :)
+I really like the default dwm color palette, so beauty changes are insignificant :)
 See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patches)
 
 # Screenshots
