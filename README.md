@@ -31,7 +31,7 @@ I like default dwm and arch color palette, so beauty changes are insignificant :
 
 - I use `xorg-xsetroot` in [$HOME/.xinitrc](https://github.com/HmJustHanna/dotfiles) to display info in status bar 
 
-- See also my dmenu simple config
+- See also my [dmenu](https://github.com/HmJustHanna/dmenu) simple config
 
 - Read more about suckless utils http://suckless.org
 
