@@ -1,6 +1,6 @@
 # About
 
-I like default dwm and arch colors, so beauty changes are insignificant :)
+I like default dwm and arch color palette, so beauty changes are insignificant :)
 
 # Screenshots
 
@@ -9,8 +9,13 @@ I like default dwm and arch colors, so beauty changes are insignificant :)
 
 ![](/assets/images/ytfzf.png)
 
+![](/assets/images/wallpaper.png)
 
-# Main packages
+# Main packages 
+
+[rxvt-unicode](https://wiki.archlinux.org/title/Rxvt-unicode)- a VT102 terminal emulator for the X window system
+
+[vim](https://github.com/vim/vim) - a programmer's text editor
 
 [lf](https://github.com/gokcehan/lf) - terminal file manager
 
@@ -18,11 +23,9 @@ I like default dwm and arch colors, so beauty changes are insignificant :)
 
 [mpv](https://github.com/mpv-player/mpv) - media player
 
-`rxvt-unicode` - a VT102 terminal emulator for the X window system
+[git-client](https://github.com/cli/cli) - a terminal GitHub CLI (gh)
 
-`git-client` - a terminal GitHub CLI (gh)
-
-`neofetch` - customizable system info script
+[neofetch](https://github.com/dylanaraps/neofetch) - customizable system info script
 
 # Other
 
