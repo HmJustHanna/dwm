@@ -108,6 +108,7 @@ static const Key keys[] = {
 	{ 0,          XF86XK_MonBrightnessDown,	spawn,      {.v = brd } },
 	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
 	{ ShiftMask,  XK_Print,                 spawn,      {.v = scrotsel } },
+	{ MODKEY,     XK_n,                     spawn,      SHCMD("$HOME/.local/bin/todo.sh")},
 };
 
 /* button definitions */
