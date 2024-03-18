@@ -100,7 +100,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,   spawn,      SHCMD("$HOME/.local/bin/dmenu/killdwm.sh")},
 	{ 0,          XF86XK_AudioRaiseVolume,	spawn,      {.v = volu } },
 	{ 0,          XF86XK_AudioLowerVolume,	spawn,      {.v = vold } },
 	{ 0,          XF86XK_AudioMute,         spawn,      {.v = volm } },
@@ -109,6 +109,8 @@ static const Key keys[] = {
 	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
 	{ ShiftMask,  XK_Print,                 spawn,      {.v = scrotsel } },
 	{ MODKEY,     XK_n,                     spawn,      SHCMD("$HOME/.local/bin/todo.sh")},
+	{ MODKEY,     XK_c,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/editconf.sh")},
+	{ 0,          XK_Num_Lock,              spawn,      SHCMD("$HOME/.local/bin/notify/numlock.sh")},
 };
 
 /* button definitions */
