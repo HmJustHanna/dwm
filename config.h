@@ -109,7 +109,8 @@ static const Key keys[] = {
 	{ ShiftMask,  XK_Print,                 spawn,      {.v = scrotsel } },
 	{ MODKEY,     XK_n,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/todo.sh")},
 	{ MODKEY,     XK_s,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/websearch.sh")},
-	{ MODKEY,     XK_e,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/editconfig.sh")},
+	{ MODKEY,     XK_e,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/editconf.sh")},
+	{ MODKEY,     XK_w,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/mpvwatch.sh")},
 	{ 0,          XK_Num_Lock,              spawn,      SHCMD("$HOME/.local/bin/notify/numlock.sh")},
 };
 
