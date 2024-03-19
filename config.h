@@ -83,7 +83,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
@@ -109,7 +108,8 @@ static const Key keys[] = {
 	{ 0,          XK_Print,                 spawn,      {.v = scrot } },
 	{ ShiftMask,  XK_Print,                 spawn,      {.v = scrotsel } },
 	{ MODKEY,     XK_n,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/todo.sh")},
-	{ MODKEY,     XK_c,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/editconf.sh")},
+	{ MODKEY,     XK_s,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/websearch.sh")},
+	{ MODKEY,     XK_e,                     spawn,      SHCMD("$HOME/.local/bin/dmenu/editconfig.sh")},
 	{ 0,          XK_Num_Lock,              spawn,      SHCMD("$HOME/.local/bin/notify/numlock.sh")},
 };
 
