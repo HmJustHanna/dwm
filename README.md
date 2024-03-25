@@ -6,11 +6,11 @@ See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patc
 
 # Screenshots
 
-![](/assets/images/neofetch.png)
+![](/assets/neofetch.png)
 
-![](/assets/images/ytfzf.png)
+![](/assets/ytfzf.png)
 
-![](/assets/images/wallpaper.png)
+![](/assets/wallpaper.png)
 
 # Main packages 
 
