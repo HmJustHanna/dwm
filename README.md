@@ -2,7 +2,7 @@
 
 After several months of using [i3](https://i3wm.org/), I finally switched to [dwm](https://dwm.suckless.org/). i3 was a good start, but I want even more minimalism! Moreover, dwm is written in c and I was already familiar with the syntax.
 I really like the default dwm color palette, so beauty changes are insignificant :)
-See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patches)
+See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patches).
 
 # Screenshots
 
@@ -30,9 +30,9 @@ See all applied pathces [here](https://github.com/HmJustHanna/dwm/tree/main/patc
 
 # Other
 
-I use `xorg-xsetroot` in [$HOME/.xinitrc](https://github.com/HmJustHanna/dotfiles) to display info in status bar 
+I use `xorg-xsetroot` in [$HOME/.xinitrc](https://github.com/HmJustHanna/dotfiles) to display info in status bar.
 
-See also my [dmenu](https://github.com/HmJustHanna/dmenu) simple config
+See also my [dmenu](https://github.com/HmJustHanna/dmenu) simple config.
 
 Read more about suckless utils http://suckless.org
 
